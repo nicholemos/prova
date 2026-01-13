@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudo Concurso Contagem - Analista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Prefeitura Municipal de Contagem-MG</h1>
+    <h2>Concurso Público - Edital 01/2025</h2>
+    <p>Analista de Sistemas - Tipo 1</p>
+  </header>
+
+  <nav>
+    <button class="active" onclick="filtrar('Todas', this)">Todas</button>
+    <button onclick="filtrar('Português', this)">Português</button>
+    <button onclick="filtrar('Lógica', this)">Raciocínio Lógico</button>
+    <button onclick="filtrar('SUS', this)">SUS</button>
+    <button onclick="filtrar('Contagem', this)">Contagem</button>
+    <button onclick="filtrar('Específicos', this)">Específicos</button>
+  </nav>
+
+  <main id="container-questoes">
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
