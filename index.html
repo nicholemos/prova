@@ -12,7 +12,7 @@
   <header>
     <h1>Prefeitura Municipal de Contagem-MG</h1>
     <h2>Concurso Público - Edital 01/2025</h2>
-    <p>Analista de Sistemas - Tipo 1</p>
+    <p>Analista de Sistemas</p>
   </header>
 
   <nav>
@@ -23,9 +23,26 @@
     <button onclick="filtrar('Contagem', this)">Contagem</button>
     <button onclick="filtrar('Específicos', this)">Específicos</button>
   </nav>
+  <div class="status-prova">
+    <div id="cronometro">Tempo restante: 04:00:00</div>
+    <div class="progresso-container">
+      <div id="barra-progresso"></div>
+      <span id="texto-progresso">0/40 Questões respondidas</span>
+    </div>
+    <button onclick="reiniciarProva()" class="btn-reiniciar">Reiniciar Simulado</button>
+  </div>
+
+  <div id="modal-resultado" class="modal">
+    <div class="modal-content">
+      <h2>Simulado Finalizado!</h2>
+      <div id="rank-acertos"></div>
+      <button onclick="reiniciarProva()">Tentar Novamente</button>
+    </div>
+  </div>
 
   <main id="container-questoes">
   </main>
+
 
   <script src="questions.js"></script>
   <script src="script.js"></script>
